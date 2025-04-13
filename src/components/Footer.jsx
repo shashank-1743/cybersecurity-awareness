@@ -116,7 +116,17 @@ function Footer() {
               <ul className="list-unstyled contact-info">
                 <li className="d-flex mb-3">
                   <FaPhoneAlt className="text-primary me-3 mt-1" />
-                  <span className="text-muted">+91 1800-XXX-XXXX</span>
+                  <div className="d-flex flex-column">
+                    <a href="tel:18002589999" className="contact-link text-muted mb-1">
+                      Emergency: 1800-258-9999
+                    </a>
+                    <a href="tel:1930" className="contact-link text-muted mb-1">
+                      Cyber Crime: 1930
+                    </a>
+                    <a href="tel:1091" className="contact-link text-muted">
+                      Women's Helpline: 1091
+                    </a>
+                  </div>
                 </li>
                 <li className="d-flex mb-3">
                   <FaEnvelope className="text-primary me-3 mt-1" />
@@ -169,4 +179,4 @@ function Footer() {
   );
 }
 
-export default Footer; 
+export default Footer;

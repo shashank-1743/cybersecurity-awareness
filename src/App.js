@@ -13,6 +13,7 @@ import PersonalSafety from './pages/PersonalSafety';
 import FinancialSecurity from './pages/FinancialSecurity';
 import SocialMediaSafety from './pages/SocialMediaSafety';
 import DeviceSecurity from './pages/DeviceSecurity';
+import HaveProblem from './pages/HaveProblem';
 
 function App() {
   const [scrollProgress, setScrollProgress] = useState(0);
@@ -44,6 +45,7 @@ function App() {
         <Route path="/safety/financial" element={<FinancialSecurity />} />
         <Route path="/safety/social" element={<SocialMediaSafety />} />
         <Route path="/safety/device" element={<DeviceSecurity />} />
+        <Route path="/have-problem" element={<HaveProblem />} />
       </Routes>
       <div 
         className="scroll-progress"

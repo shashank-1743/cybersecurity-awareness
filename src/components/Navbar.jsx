@@ -53,10 +53,10 @@ function NavigationBar() {
               variant="danger" 
               className="ms-2 pulse-button d-flex align-items-center"
               as={Link}
-              to="/helpline"
+              to="/have-problem"
             >
               <FaExclamationTriangle className="me-2" />
-              Report
+              Have a Problem?
             </Button>
           </Nav>
         </Navbar.Collapse>
@@ -65,4 +65,4 @@ function NavigationBar() {
   );
 }
 
-export default NavigationBar; 
+export default NavigationBar;
