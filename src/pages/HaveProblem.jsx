@@ -312,6 +312,7 @@ function HaveProblem() {
                       className={`upload-box p-3 border rounded text-center ${fileError ? 'border-danger' : ''}`}
                       onDragOver={handleDragOver}
                       onDrop={handleDrop}
+                      onClick={() => fileInputRef.current.click()}
                       style={{ 
                         cursor: 'pointer',
                         background: fileError ? 'rgba(255,0,0,0.05)' : '#f8f9fa',
@@ -327,11 +328,7 @@ function HaveProblem() {
                         ref={fileInputRef}
                         accept=".jpg,.jpeg,.png,.pdf"
                       />
-                      <Form.Label 
-                        htmlFor="file-upload" 
-                        className="mb-0 cursor-pointer"
-                        style={{ cursor: 'pointer' }}
-                      >
+                      <div className="mt-2">
                         {formData.evidence ? (
                           <div className="text-success">
                             Selected: {formData.evidence.name}
@@ -339,7 +336,7 @@ function HaveProblem() {
                         ) : (
                           'Click to upload or drag and drop'
                         )}
-                      </Form.Label>
+                      </div>
                       <p className="text-muted small mb-0">
                         Supports: JPG, PNG, PDF (Max size: 5MB)
                       </p>
